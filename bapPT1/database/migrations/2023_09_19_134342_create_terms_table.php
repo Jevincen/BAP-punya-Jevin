@@ -15,7 +15,7 @@ class CreateTermsTable extends Migration
     {
         Schema::create('terms', function (Blueprint $table) {
             $table->id();
-            $table->('kode_term');
+            $table->char('kode_term');
             $table->char('tahun_ajaran', 4);
             $table->char('semester', 10);
             $table->text('keterangan');

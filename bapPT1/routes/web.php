@@ -28,3 +28,6 @@ Route::get('/mahasiswa', [mahasiswaController::class, 'index']);
 //     return view('mahasiswa');
 // });
 Route::get('/matakuliah', [matakuliahController::class, 'index']);
+Route::get('/jadwalkuliah', [matakuliahController::class, 'index']);
+Route::get('/programstudi', [matakuliahController::class, 'index']);
+Route::get('/pembayaran', [matakuliahController::class, 'index']);

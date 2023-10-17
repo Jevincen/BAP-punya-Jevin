@@ -1,4 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.app2')
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <head>
     <style>
         th {
@@ -22,11 +25,11 @@
     <h1>Profile</h1>
     <div class="table-container">
         <p> Nama        : Jevincent Ong </p>
-        <p> Umur        : 20 Tahun </p>
+        <p> Umur        : 19 Tahun </p>
         <p> Student ID  : 03081210037</p>
         <p> Email       : Jevincenttt@gmail.com </p>
         <p> Kelas       : 21SI2</p>
-        <p> Alamat      : jalan Muara Takus</p>
+        <p> Alamat      : jalan Muara Takus No. 10</p>
         <p> Universitas : Universitas Pelita Harapan</p>
     </div>
     <h2 align="left">Matakuliah</h2>
