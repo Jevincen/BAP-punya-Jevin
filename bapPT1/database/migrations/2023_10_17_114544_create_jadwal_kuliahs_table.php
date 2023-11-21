@@ -17,13 +17,13 @@ class CreateJadwalkuliahsTable extends Migration
     {
         Schema::create('jadwal_kuliahs', function (Blueprint $table) {
             $table->id();
-            $table->varchar('Kode_Matakuliah', 8);
-            $table->varchar('Kode_Term', 8);
-            $table->varchar('Kode_Dosen_Pengampu', 8);
-            $table->varchar('Hari', 6);
+            $table->char('Kode_Matakuliah', 8);
+            $table->char('Kode_Term', 8);
+            $table->char('Kode_Dosen_Pengampu', 8);
+            $table->char('Hari', 6);
             $table->time('Jam_Mulai_Perkuliahan');
             $table->time('Jam_Selesai_Perkuliahan');
-            $table->varchar('Ruangan_Kelas', 5);
+            $table->char('Ruangan_Kelas', 5);
             $table->timestamps();
         });
     }
@@ -35,7 +35,7 @@ class CreateJadwalkuliahsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('matakuliahs');
+        Schema::dropIfExists('jadwal_kuliahs');
 
     }
 }
